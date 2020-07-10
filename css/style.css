@@ -159,7 +159,7 @@ input:checked ~ .menu__mobile__list {
   text-decoration: none;
 }
 
-                                   /* CAROUSEL */ 
+/* CAROUSEL */ 
 .img-carousel{
     object-fit: fill;
     object-position:0 40%;
@@ -169,4 +169,18 @@ input:checked ~ .menu__mobile__list {
 .colocar-padding{
     margin: 15px;
     padding: 20px;
+}
+
+
+
+/* FOOTER */
+
+.bg-footer{
+  background-color: #55828b;
+}
+
+.rede_social_footer i{
+  font-size: 2rem;
+  color: #ffffff;
+  
 }
