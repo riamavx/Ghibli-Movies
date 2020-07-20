@@ -1,137 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
-    <script src="https://kit.fontawesome.com/4fe8d55b33.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/4fe8d55b33.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <nav class="nav">
-        <div class="nav__logo">
-            <a href="index.html">
-                <img class="nav__img" src="imagem/movies/logo.png" alt="Logo Studio Glibhi" />
-            </a>
-        </div>
-        <ul class="menu__desktop">
-            <li class="menu__item">
-                <a class="menu__item__link" href="#galeria">Home</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__item__link" href="movies.html">Movies</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__item__link" href="#comofunciona">Wallpaper</a>
-            </li>
-
+      <ul class="menu__desktop">
+        <li class="menu__item">
+          <a class="menu__item__link" href="#galeria">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__link" href="movies.html">Movies</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item__link" href="#comofunciona">Wallpaper</a>
+        </li>
+      </ul>
+      <div class="menu__mobile">
+        <input id="menu-hamburguer" type="checkbox" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+        <ul class="menu__mobile__list">
+          <li class="menu__mobile__item"><a href="quem-somos.html">Home</a></li>
+          <li class="menu__mobile__item"><a href="#galeria">Movies</a></li>
+          <li class="menu__mobile__item">
+            <a href="#comofunciona">Wallpaper</a>
+          </li>
         </ul>
-        <div class="menu__mobile">
-            <input id="menu-hamburguer" type="checkbox" />
-            <label for="menu-hamburguer">
-                <div class="menu">
-                    <span class="hamburguer"></span>
-                </div>
-            </label>
-            <ul class="menu__mobile__list">
-                <li class="menu__mobile__item"><a href="quem-somos.html">Home</a></li>
-                <li class="menu__mobile__item"><a href="#galeria">Movies</a></li>
-                <li class="menu__mobile__item"><a href="#comofunciona">Wallpaper</a></li>
-
-            </ul>
-        </div>
+      </div>
     </nav>
 
-
-    <!-- CARROUSEL COM BOOTSTRAP -->
-
-    <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active img-fluid">
-                <img class="d-block w-100 img-carousel" src="https://media.giphy.com/media/Jkk64Xj64mcfu/giphy.gif"
-                    alt="Primeiro Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 img-carousel" src="https://media.giphy.com/media/7uL3gPwnUBrvq/giphy.gif"
-                    alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 img-carousel" src="https://media.giphy.com/media/XPdR7H122vZ1C/giphy.gif"
-                    alt="Terceiro Slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
+    <header class="historia__mae">
+      <div class="">
+        <h1 class="historia__titulo">Bem-vindo ao mundo de Hayao Miyazaki</h1>
+        <center>
+          <video autoplay muted loop id="myVideo">
+            <source src="imagem/movies/ponyo-video.mp4" type="video/mp4" />
+          </video>
+        </center>
+        <p class="historia__texto">
+          é uma animação japonesa estúdio de cinema com sede em Koganei, Tokyo .
+          O estúdio é mais conhecido por seus filmes de animação, e também
+          produziu vários curtas, comerciais de televisão e um filme de
+          televisão. Foi fundada em 15 de junho de 1985 pelos diretores Hayao
+          Miyazaki e Isao Takahata e pelo produtor Toshio Suzuki , após o
+          sucesso do filme de anime de Topcraft Nausicaä of the Valley of the
+          Wind(1984). O Studio Ghibli também colaborou com os estúdios de
+          videogame no desenvolvimento visual de vários videogames. Seis dos
+          filmes de Studio Ghibli estão entre os 10 filmes de anime com maior
+          bilheteria produzidos no Japão, com Spirited Away (2001) sendo o
+          segundo mais alto, arrecadando mais de US $ 360 milhões em todo o
+          mundo. Muitos de seus trabalhos ganharam o prêmio Animage Anime Grand
+          Prix e quatro ganharam o Prêmio da Academia de Animação do Ano do
+          Japão . Cinco dos filmes de Studio Ghibli receberam indicações ao
+          Oscar. Spirited Away ganhou o Urso de Ouro em 2002 e o Oscar de Melhor
+          Filme de Animação em 2003 . Totoro, um personagem de My Neighbour
+          Totoro , é o mascote do estúdio. Em 3 de agosto de 2014, o Studio
+          Ghibli interrompeu temporariamente a produção após a aposentadoria de
+          Miyazaki. Em fevereiro de 2017, a Toshio Suzuki anunciou que Miyazaki
+          havia se aposentado novamente para dirigir um novo longa, How Do You
+          Live? , com o Studio Ghibli. O nome Ghibli foi dado por Hayao Miyazaki
+          do substantivo italiano ghibli , baseado no nome árabe-líbio do vento
+          quente do deserto daquele país, com a ideia de que o estúdio "soprava
+          um novo vento pela indústria de anime". Também se refere a uma
+          aeronave italiana, a Caproni Ca.309 Ghibli .
+        </p>
+      </div>
     </header>
 
-    <!-- HISTORIA -->
-
-    <section class="">
-        <div class="historia">
-            
-            <h3 ><strong>Hayao Miazaki</strong></h3>
-            <img class="historia__img" src="imagem/movies/hayao-miyazaki.png" alt="">
-            
-            <p>Hayao Miyazaki é um animador, cineasta, roteirista, escritor e artista de mangá japonês. É co-fundador do
-                Studio Ghibli, uma companhia de cinema e animação, tendo conquistado reconhecimento e aclamação
-                internacional pela qualidade de seus vários longas-metragens de animação, os quais ele normalmente
-                escreve e dirige, sendo amplamente considerado como um dos principais nomes da indústria de animação
-                japonesa.</p>
+    <section >
+      <h3><a href="#">Filmes em Destaque</a></h3>
+      <div class="filmes__destaque">
+        <div id="galeria-prev" class="arrow"></div>
+        <div>
+          <img class="filmes_img" src="./imagem/movies/totoro.png" />
         </div>
-
+        <div>
+          <img class="filmes_img" src="./imagem/movies/princesa-mononoke.jpg" />
+        </div>
+        <div>
+          <img class="filmes_img" src="./imagem/movies/kiki.png" />
+        </div>
+        <div id="galeria-next" class="arrow"></div>
+      </div>
     </section>
-
 
     <!-- FOOTER -->
 
-
     <footer class="footer text-center md-3 bg-footer p-3">
+      <a
+        class="rede_social_footer icone_contato"
+        href="https://github.com/riamavx"
+        target="_blank"
+        alt="Icone Github"
+      >
+        <i class="fab fa-github-alt"></i>
+      </a>
 
-        <a class="rede_social_footer icone_contato" href="https://github.com/riamavx" target="_blank"
-          alt="Icone Github">
-          <i class="fab fa-github-alt"></i>
-        </a>
-    
-        <a class="rede_social_footer icone_contato" href="https://www.linkedin.com/in/maria-souza-oliveira/" target="blank" alt="Icone Linkedin">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <p class="text-white">Desenvolvido por
-          <a class="text-white font-weight-bold" href="X"> Maria Souza </a>
-          {reprograma} 2020
-        </p>
-      </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <a
+        class="rede_social_footer icone_contato"
+        href="https://www.linkedin.com/in/maria-souza-oliveira/"
+        target="blank"
+        alt="Icone Linkedin"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <p class="text-white">
+        Desenvolvido por
+        <a class="text-white font-weight-bold" href="X"> Maria Souza </a>
+        {reprograma} 2020
+      </p>
+    </footer>
 
     <script src="javascript/jquery-3.5.1.js"></script>
+    <script src="./javascript/slick.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
-
-
-
-</body>
-
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
