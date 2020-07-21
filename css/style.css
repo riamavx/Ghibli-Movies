@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -182,37 +182,62 @@ video {
 
 .historia__texto {
   margin: 15px;
+  font-size: 12px;
 }
 
-/* Seção filmes destaque */
+
+
+.destaque__titulo h3{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.teste{
+  position: relative;
+}
 
 .arrow {
   display: inline-block;
   margin: 20px 0;
   width: 50px;
-  height: 72px;
+  height: 50px;
   background-repeat: no-repeat;
   background-size: 38% auto;
   background-position: center;
   cursor: pointer;
 }
 
-.arrow:hover{
-  background-color:#364958 ;
-}
+
+
 
 #arrow-prev,
 #galeria-prev {
   background-image: url("../imagem/icons/arrow-prev.png");
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  width: 30%;
+  margin-right: 0%;
+  height: 60%;
 }
 
 #arrow-next,
 #galeria-next {
   background-image: url("../imagem/icons/arrow-next.webp");
+  position: absolute;
+    top: 0px;
+    margin: 0;
+    width: 30%;
+    margin-left: 70%;
+    height: 60%;
 }
 
 .filmes_img{
-  width: 100px;
+  margin: 0 auto;
+  max-width: 140px;
+  width: 100%;
 }
 
 /* FOOTER */
@@ -224,4 +249,30 @@ video {
 .rede_social_footer i {
   font-size: 1rem;
   color: #ffffff;
+}
+
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (min-width: 480px){
+.nav{
+  height: 13vh;
+}
+
+  video{
+    width: 473px;
+    padding: 5px;
+  }
+
+  .historia__titulo{
+    font-size: 20px;
+  }
+
+  .historia__texto{
+    font-size: 18px;
+    padding: 9px;
+  }
 }

@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/4fe8d55b33.js"
       crossorigin="anonymous"
@@ -84,20 +83,33 @@
       </div>
     </header>
 
-    <section >
-      <h3><a href="#">Filmes em Destaque</a></h3>
-      <div class="filmes__destaque">
-        <div id="galeria-prev" class="arrow"></div>
-        <div>
-          <img class="filmes_img" src="./imagem/movies/totoro.png" />
+    <section class="destaque">
+      <div class="destaque__titulo">
+        <h3><a href="#">Filmes em Destaque</a></h3>
+      </div>
+
+      <div class="teste">
+        <div class="filmes__destaque">
+          <!-- <div id="galeria-prev" class="arrow"></div> -->
+          <div>
+            <img class="filmes_img" src="./imagem/movies/totoro.png" />
+          </div>
+          <div>
+            <img
+              class="filmes_img"
+              src="./imagem/movies/princesa-mononoke.jpg"
+            />
+          </div>
+          <div>
+            <img class="filmes_img" src="./imagem/movies/kiki.png" />
+          </div>
+          <!-- <div id="galeria-next" class="arrow"></div> -->
         </div>
+
         <div>
-          <img class="filmes_img" src="./imagem/movies/princesa-mononoke.jpg" />
+          <div id="galeria-prev" class="arrow"></div>
+          <div id="galeria-next" class="arrow"></div>
         </div>
-        <div>
-          <img class="filmes_img" src="./imagem/movies/kiki.png" />
-        </div>
-        <div id="galeria-next" class="arrow"></div>
       </div>
     </section>
 
