@@ -159,14 +159,12 @@ input:checked ~ .menu__mobile__list {
 }
 
 /* NAV */
-.menu__item__link{
-  color: black;
-  
-}
+
 
 .menu__item__link:hover{
-  background-color: #2ec4b6;
+  color: #2ec4b6;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* SEÇÃO HISTORIA */
@@ -211,7 +209,7 @@ video {
 }
 
 .destaque__titulo:hover{
- background-color: seagreen;
+ color:  #2ec4b6;
  
 }
 
@@ -363,6 +361,7 @@ video {
     font-size: 30px;
     padding: 5px;
     margin: 5px;
+    text-decoration: none;
   }
 
 
