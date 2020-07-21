@@ -158,6 +158,17 @@ input:checked ~ .menu__mobile__list {
   text-decoration: none;
 }
 
+/* NAV */
+.menu__item__link{
+  color: black;
+  
+}
+
+.menu__item__link:hover{
+  background-color: #2ec4b6;
+  cursor: pointer;
+}
+
 /* SEÇÃO HISTORIA */
 
 .historia__mae {
@@ -171,26 +182,37 @@ input:checked ~ .menu__mobile__list {
   text-align: center;
   justify-content: center;
   padding: 10px;
-  margin: 12px;
+  margin: 35px;
 }
 
 video {
   opacity: 0.7;
   width: 318px;
   padding: 10px;
+  border-radius: 3rem
 }
 
 .historia__texto {
   margin: 15px;
   font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+
 }
 
-
+.destaque{
+  background-color: #87bba280;
+}
 
 .destaque__titulo h3{
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 20px;
+}
+
+.destaque__titulo:hover{
+ background-color: seagreen;
+ 
 }
 
 
@@ -212,32 +234,34 @@ video {
 
 
 
-#arrow-prev,
+
 #galeria-prev {
   background-image: url("../imagem/icons/arrow-prev.png");
   position: absolute;
   top: 0px;
   margin: 0;
-  width: 30%;
+  width: 80px;
   margin-right: 0%;
-  height: 60%;
+  height: 90%;
 }
 
-#arrow-next,
+
 #galeria-next {
   background-image: url("../imagem/icons/arrow-next.webp");
   position: absolute;
     top: 0px;
     margin: 0;
-    width: 30%;
-    margin-left: 70%;
-    height: 60%;
+    width: 80px;
+    margin-left: 77%;
+    height: 90%;
+    right: 0;
 }
 
 .filmes_img{
   margin: 0 auto;
   max-width: 140px;
   width: 100%;
+  padding: 2px;
 }
 
 /* FOOTER */
@@ -274,5 +298,86 @@ video {
   .historia__texto{
     font-size: 18px;
     padding: 9px;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  label{
+    margin: 0 9px;
+  }
+  .historia__titulo{
+    font-size: 25px;
+  }
+  video{
+    width: 100%;
+  }
+
+  .bg-footer {
+    font-size: 1.1rem;
+  }
+  
+  .rede_social_footer i {
+    font-size: 2rem;
+    
+  }
+}
+
+
+@media only screen and (min-width: 920px){
+  .menu__mobile{
+    display: none;
+  }
+  .menu__desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 33%;
+    margin-right: 15px;
+    list-style: none;
+  }
+
+  .nav{
+    justify-content: flex-end;
+  }
+
+  
+}
+
+@media only screen and (min-width: 1200px){
+  .historia__titulo{
+    font-size: 30px;
+    
+  }
+
+  video{
+    max-width: 1114px;
+  }
+
+  .historia__texto{
+    font-size: 1.8rem;
+  }
+
+  .destaque__titulo a{
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+
+  .filmes_img{
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .bg-footer {
+    font-size: 1.1rem;
+  }
+  
+  .rede_social_footer i {
+    font-size: 2rem;
+    
   }
 }
