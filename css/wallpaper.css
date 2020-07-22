@@ -1,41 +1,241 @@
-* {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/* Navegação */
+.nav {
+  background-color: #55828b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav__img {
+  width: 66px;
+  max-width: 100%;
+  height: 66px;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 902;
+  top: -6px;
+  border-radius: 50%;
+}
+
+.menu__desktop {
+  display: none;
+}
+
+/* Menu Hambuguer  */
+
+.menu {
+  background: #55828b;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 0 #55828b, 0 0 0 0 #55828b;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  margin: 10px;
+  top: -6px;
+}
+
+.menu:hover {
+  box-shadow: 0 0 0 8px #55828b, 0 0 0 8px #55828b;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #133c55;
+  width: 25px;
+  height: 2px;
+  top: 18px;
+  right: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #133c55;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 100vw #55828b, 0 0 0 40vh #55828b;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+input:checked ~ .menu__mobile__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__mobile__list {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+  visibility: hidden;
+  z-index: 2;
+}
+
+.menu__mobile__item {
+  text-align: center;
+  width: 100%;
+}
+
+.menu__mobile__list a {
+  color: #87bba2;
+  display: block;
+  text-decoration: none;
+  margin: 0.7rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.menu__mobile__list a:hover {
+  font-weight: bold;
+  color: #87bba2;
+  text-decoration: none;
+}
+
+/* nav */
+.menu__item__link:hover{
+    color: #2ec4b6;
+    cursor: pointer;
+    text-decoration: none;
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+
+  .wallpaper__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 15px;
+    
   }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+
+  .wallpaper{
+    display: flex;
+    
+    flex-wrap: wrap;
   }
-  
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  .wallpaper__img{
+    /* width: 100%;
+    height: 100%;
+    width: 600px; */
+    display: flex;
+    /* max-width: 600px; */
+    /* height: 100%; */
+    /* max-height: 400px; */
+    margin: 5px;
+    padding: 5px;
   }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
+
+
+
+
+
+
+  /* FOOTER */
+
+.bg-footer {
+  background-color: #55828b;
+}
+
+.rede_social_footer i {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.rodape{
+    
+}
+
+
+
+@media only screen and (min-width: 920px){
+  .menu__mobile{
+    display: none;
   }
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+  .menu__desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 15px;
+    list-style: none;
   }
+
+  .menu__item{
+    margin: 13px;
+    font-size: 30px;
+    padding: 0px 25px;
+  }
+
+  .nav{
+    justify-content: flex-end;
+    color: white;
+  }
+
+  
+}

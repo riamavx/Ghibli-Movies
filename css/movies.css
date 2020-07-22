@@ -173,9 +173,16 @@ input:checked ~ .menu__mobile__list {
 
 
 /* CARDS FILMES  */
+
+.filmes{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
 .container__filmes{
     flex-wrap: wrap;
     display: flex;
+    
 }
 
 .card{
@@ -198,6 +205,10 @@ input:checked ~ .menu__mobile__list {
   .rede_social_footer i {
     font-size: 1rem;
     color: #ffffff;
+  }
+
+  .rodape{
+      
   }
   
 
