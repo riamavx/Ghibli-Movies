@@ -169,8 +169,13 @@ input:checked ~ .menu__mobile__list {
 
 /* SEÇÃO HISTORIA */
 
+.historia__container{
+  max-width: 960px;
+}
 .historia__mae {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .historia__titulo {
@@ -257,7 +262,7 @@ video {
 
 .filmes_img{
   margin: 0 auto;
-  max-width: 140px;
+  max-width: 250px;
   width: 100%;
   padding: 2px;
 }
@@ -331,13 +336,19 @@ video {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    width: 33%;
     margin-right: 15px;
     list-style: none;
   }
 
+  .menu__item{
+    margin: 13px;
+    font-size: 30px;
+    padding: 0px 25px;
+  }
+
   .nav{
     justify-content: flex-end;
+    color: white;
   }
 
   
@@ -357,7 +368,7 @@ video {
     font-size: 1.8rem;
   }
 
-  .destaque__titulo a{
+  .destaque__titulo{
     font-size: 30px;
     padding: 5px;
     margin: 5px;
@@ -368,7 +379,7 @@ video {
 
   .filmes_img{
     width: 100%;
-    max-width: 230px;
+    max-width: 400px;
   }
 
   .bg-footer {
