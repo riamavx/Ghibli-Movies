@@ -182,6 +182,9 @@ input:checked ~ .menu__mobile__list {
 .container__filmes{
     flex-wrap: wrap;
     display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-self: center;
     
 }
 
