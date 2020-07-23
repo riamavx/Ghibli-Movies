@@ -177,23 +177,25 @@ input:checked ~ .menu__mobile__list {
   }
 
   .wallpaper{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1700px;
-    margin: 0 auto;
+    max-width: 600px;
+	 margin: 0 auto;
+	 column-count: 2;
   }
 
   .wallpaper__img{
-   max-width: 300px;
-   max-height: 300px;
-   overflow: hidden;
-   margin: 10px;
-   cursor: initial;
-   display:flex;
-   align-items: center;
-   display: ;
+    display: block;
+    max-width: 100%;
   }
 
+  .wallpaper__div {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(50,50,90,.1);
+    break-inside: avoid-column;
+    overflow: hidden;
+  }
+  
 
 
 
@@ -218,9 +220,12 @@ input:checked ~ .menu__mobile__list {
   .nav{
     height: 13vh;
   }
-  .wallpaper__img{
-    max-width: 396px;
-    max-height: 287px;
+  
+
+  .wallpaper{
+    
+   column-count: 3;
+   max-width: 700px;
   }
   
     
@@ -238,6 +243,12 @@ input:checked ~ .menu__mobile__list {
       font-size: 2rem;
       
     }
+
+    .wallpaper{
+    
+      column-count: 3;
+      /* max-width: 700px; */
+     }
   }
   
   
@@ -264,10 +275,10 @@ input:checked ~ .menu__mobile__list {
       justify-content: flex-end;
       color: white;
     }
-    .wallpaper__img{
-      max-width: 500px;
-      max-height: 500px;
-    }
+    .wallpaper{
+    column-count: 3;
+    max-width: 800px;
+     }
   
     
   }
@@ -282,4 +293,10 @@ input:checked ~ .menu__mobile__list {
       font-size: 2rem;
       
     }
+
+    .wallpaper{
+    
+      column-count: 3;
+      max-width: 800px;
+     }
   }
