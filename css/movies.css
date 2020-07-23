@@ -182,7 +182,7 @@ input:checked ~ .menu__mobile__list {
 .container__filmes{
     flex-wrap: wrap;
     display: flex;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     align-self: center;
     
@@ -210,14 +210,14 @@ input:checked ~ .menu__mobile__list {
     color: #ffffff;
   }
 
-  .rodape{
-      
-  }
+
   
 
 
 
 /* responsividade */
+
+
 
 
 @media only screen and (min-width: 920px){

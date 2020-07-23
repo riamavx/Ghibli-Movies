@@ -211,10 +211,21 @@ video {
   display: flex;
   justify-content: center;
   margin: 20px;
+ 
+  
+}
+
+.destaque__titulo a{
+  text-decoration: none !important;
+  list-style: none !important;
+ 
+  
 }
 
 .destaque__titulo:hover{
  color:  #2ec4b6;
+ 
+
  
 }
 
