@@ -32,6 +32,7 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  margin-bottom: 72px;
 }
 
 .nav__img {
@@ -330,7 +331,8 @@ input:checked ~ .menu__mobile__list {
     .nav{
       justify-content: flex-end;
       color: white;
-      margin-bottom: 72px;
+      
+    
     }
     .wallpaper{
     column-count: 3;
