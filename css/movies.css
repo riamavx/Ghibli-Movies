@@ -200,6 +200,11 @@ input:checked ~ .menu__mobile__list {
     max-height: 396px;
 }
 
+.icon__netflix{
+  width: 100%;
+  max-width: 20px;
+}
+
 /* FOOTER */
 
 .bg-footer {
